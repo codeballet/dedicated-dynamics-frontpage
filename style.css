@@ -1,0 +1,191 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: rgb(246, 232, 214);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    margin: 0 1rem 0 0;
+}
+
+h2 {
+    margin-top: 0.2rem;
+}
+
+.top-band {
+    background-color: rgb(212, 212, 212);
+    height: 3rem;
+
+    grid-column: 1 / -1;
+}
+
+/* Header */
+header {
+    position: relative;
+    min-width: 19rem;
+}
+
+header nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Header home */
+header .home {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 100rem;
+    border: solid rgb(207, 91, 56) 1px;
+
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+header .home a {
+    color: rgb(207, 91, 56);
+    font-weight: 400;
+}
+
+/* Header portfolio */
+header .portfolio {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 100rem;
+    background-color: rgb(94, 86, 86);
+
+    position: absolute;
+    margin-top: 7.2rem;
+    margin-left: 8rem;
+}
+
+header .portfolio a {
+    color: rgb(246, 232, 214);
+}
+
+/* Header about */
+header .about {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 100rem;
+    background-color: rgb(207, 91, 56);
+
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 0.2rem;
+}
+
+header .about a {
+    color: rgb(246, 232, 214);
+}
+
+/* Header contact */
+header .contact {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 100rem;
+    border: solid rgb(94, 86, 86) 1px;
+
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 15.8rem;
+}
+
+header .contact a {
+    color: rgb(94, 86, 86);
+    font-weight: 400;
+}
+
+/* Main */
+main .headers {
+    margin-top: 4rem;
+}
+
+main .circles {
+    position: relative;
+    margin-top: -5rem;
+}
+
+main .circles div {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 100rem;
+
+    position: absolute;
+}
+
+main #circle1 {
+    background-color: rgb(94, 86, 86);
+    margin-top: 0rem;
+    margin-left: 22rem;
+}
+
+main #circle2,
+main #circle3,
+main #circle4 {
+    margin-top: 6rem;
+}
+
+main #circle2 {
+    background-color: rgb(228, 196, 160);
+    margin-left: 8rem;
+}
+
+main #circle3 {
+    background-color: rgb(87, 124, 101);
+    margin-left: 16rem;
+    z-index: 8;
+}
+
+main #circle4 {
+    background-color: rgb(152, 174, 160);
+    margin-left: 24rem;
+    z-index: 10;
+}
+
+main #circle5 {
+    background-color: rgb(207, 91, 56);
+    margin-top: 10rem;
+    margin-left: 12rem;
+}
+
+main #circle6 {
+    background-color: rgb(235, 160, 137);
+    margin-top: 11rem;
+    margin-left: 18rem;
+}
