@@ -63,6 +63,11 @@ header nav div a {
     font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
+    transition: 0.2s;
+}
+
+header nav div a:hover {
+    font-size: 1.6rem;
 }
 
 /* Header home */
