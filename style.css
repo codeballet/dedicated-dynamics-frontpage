@@ -50,23 +50,23 @@ header {
     min-width: 19rem;
 }
 
-header nav div {
+header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
-header nav div a {
+header nav a p {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
-    text-decoration: none;
     text-align: center;
     transition: 0.2s;
 }
 
-header nav div a:hover {
+header nav a:hover p {
     font-size: 1.6rem;
     font-weight: 600;
 }
@@ -83,7 +83,7 @@ header .home {
     margin-left: 0.2rem;
 }
 
-header .home a {
+header .home p {
     color: rgb(207, 91, 56);
     font-weight: 400;
 }
@@ -100,7 +100,7 @@ header .portfolio {
     margin-left: 8rem;
 }
 
-header .portfolio a {
+header .portfolio p {
     color: rgb(246, 232, 214);
 }
 
@@ -116,7 +116,7 @@ header .about {
     margin-left: 0.2rem;
 }
 
-header .about a {
+header .about p {
     color: rgb(246, 232, 214);
 }
 
@@ -132,7 +132,7 @@ header .contact {
     margin-left: 15.8rem;
 }
 
-header .contact a {
+header .contact p {
     color: rgb(94, 86, 86);
     font-weight: 400;
 }
