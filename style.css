@@ -68,6 +68,7 @@ header nav div a {
 
 header nav div a:hover {
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 /* Header home */
