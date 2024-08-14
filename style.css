@@ -72,11 +72,18 @@ nav {
 }
 
 .nav__button {
-    width: 6rem;
+    width: 6.5rem;
     aspect-ratio: 1/1;
     border: none;
     border-radius: 50%;
     margin-right: 0.5rem;
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.nav__button:hover {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .nav__button--leader {
