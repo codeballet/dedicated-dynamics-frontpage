@@ -1,197 +1,151 @@
+/* Variables */
+
+:root {
+    --cream: #fff5ec;
+    --grey: #5d534e;
+    --mint: #cfdac7;
+    --moss: #6f8475;
+    --peach: #ffa483;
+    --rust: #db6551;
+}
+
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Global */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+blockquote,
+button,
+h1,
+h2,
+p {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 
-    background-color: rgb(246, 232, 214);
+blockquote,
+p {
+    font-size: 1rem;
+}
 
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+blockquote {
+    font-style: italic;
+}
+
+button {
+    font-size: 0.9rem;
 }
 
 h1 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 800;
     font-size: 1.7rem;
 }
 
 h2 {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.5rem;
 }
 
-h1,
-h2 {
-    margin: 0 1rem 0 0;
+/* Globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    margin-top: 0.2rem;
-}
-
-.top-band {
-    background-color: rgb(212, 212, 212);
-    height: 3rem;
-
-    grid-column: 1 / -1;
+body {
+    background-color: var(--cream);
 }
 
 /* Header */
+
 header {
-    position: relative;
-    min-width: 19rem;
+    position: fixed;
+    top: 0;
+    right: 5vw;
 }
 
-header nav a {
+nav {
+    margin: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    text-decoration: none;
 }
 
-header nav a p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
-    text-align: center;
-    transition: 0.2s;
-}
-
-header nav a:hover p {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
-/* Header home */
-header .home {
-    width: 10rem;
+.nav__button {
+    width: 6rem;
     aspect-ratio: 1/1;
-    border-radius: 100rem;
-    border: solid rgb(207, 91, 56) 1px;
-
-    position: absolute;
-    margin-top: 0.2rem;
-    margin-left: 0.2rem;
+    border: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
 }
 
-header .home p {
-    color: rgb(207, 91, 56);
-    font-weight: 400;
+.nav__button--leader {
+    background-color: var(--moss);
+    color: var(--cream);
 }
 
-/* Header portfolio */
-header .portfolio {
-    width: 10rem;
-    aspect-ratio: 1/1;
-    border-radius: 100rem;
-    background-color: rgb(94, 86, 86);
-
-    position: absolute;
-    margin-top: 7.2rem;
-    margin-left: 8rem;
+.nav__button--board {
+    background-color: var(--peach);
 }
 
-header .portfolio p {
-    color: rgb(246, 232, 214);
+.nav__button--workshop {
+    background-color: var(--grey);
+    color: var(--cream);
 }
 
-/* Header about */
-header .about {
-    width: 10rem;
-    aspect-ratio: 1/1;
-    border-radius: 100rem;
-    background-color: rgb(207, 91, 56);
-
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: 0.2rem;
+.nav__button--about {
+    background-color: var(--mint);
 }
 
-header .about p {
-    color: rgb(246, 232, 214);
+.nav__button--contact {
+    background-color: var(--rust);
+    color: var(--cream);
 }
 
-/* Header contact */
-header .contact {
-    width: 10rem;
-    aspect-ratio: 1/1;
-    border-radius: 100rem;
-    border: solid rgb(94, 86, 86) 1px;
+/* index--container */
 
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: 15.8rem;
+.index--container {
+    margin-top: 3rem;
+    margin-left: 1rem;
 }
 
-header .contact p {
-    color: rgb(94, 86, 86);
-    font-weight: 400;
+.main--header,
+.main--intro > h2 {
+    color: var(--rust);
 }
 
-/* Main */
-main .headers {
-    margin-top: 4rem;
+.main--intro {
+    margin-top: 5rem;
+    width: 14rem;
 }
 
-main .circles {
+.main--intro > p {
+    margin-top: 1rem;
+}
+
+/* aside */
+
+.main--quotes {
     position: relative;
-    margin-top: -5rem;
+    top: -7rem;
+    left: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    height: 15rem;
 }
 
-main .circles div {
-    width: 10rem;
-    aspect-ratio: 1/1;
-    border-radius: 100rem;
-
-    position: absolute;
+.main--quotes > .quotes--chalmers {
+    width: 17rem;
+    align-self: flex-start;
 }
 
-main #circle1 {
-    background-color: rgb(94, 86, 86);
-    margin-top: 0rem;
-    margin-left: 22rem;
+.main--quotes > .quotes--ruukel {
+    width: 17rem;
+    align-self: flex-end;
 }
 
-main #circle2,
-main #circle3,
-main #circle4 {
-    margin-top: 6rem;
-}
-
-main #circle2 {
-    background-color: rgb(228, 196, 160);
-    margin-left: 8rem;
-}
-
-main #circle3 {
-    background-color: rgb(87, 124, 101);
-    margin-left: 16rem;
-    z-index: 8;
-}
-
-main #circle4 {
-    background-color: rgb(152, 174, 160);
-    margin-left: 24rem;
-    z-index: 10;
-}
-
-main #circle5 {
-    background-color: rgb(207, 91, 56);
-    margin-top: 10rem;
-    margin-left: 12rem;
-}
-
-main #circle6 {
-    background-color: rgb(235, 160, 137);
-    margin-top: 11rem;
-    margin-left: 18rem;
+.main--quotes p {
+    margin-top: 1rem;
 }
